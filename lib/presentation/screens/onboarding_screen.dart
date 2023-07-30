@@ -16,12 +16,12 @@ class OnboardingScreen extends StatelessWidget {
             fit: BoxFit.cover,
           ),
           Container(
-            margin: const EdgeInsets.only(bottom: 35),
+            margin: const EdgeInsets.only(bottom: 55),
             alignment: Alignment.center,
             child: const TextLogoWidget(),
           ),
           Container(
-              margin: const EdgeInsets.only(bottom: 35),
+              margin: const EdgeInsets.only(bottom: 30),
               alignment: Alignment.bottomCenter,
               child: const StartButtonWidget())
         ],

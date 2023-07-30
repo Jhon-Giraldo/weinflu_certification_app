@@ -4,14 +4,16 @@ import '../../infrastructure/services/app_colors_service.dart';
 import '../../infrastructure/services/app_text_style_service.dart';
 
 class ThemeConfig {
+  ThemeConfig._();
+
   static ThemeData getThemeData() {
     return ThemeData(
       useMaterial3: true,
       primaryColor: AppColorsService.primaryColor,
-      scaffoldBackgroundColor: AppColorsService.primaryColor,
-      cardColor: AppColorsService.cardColor,
+      scaffoldBackgroundColor: AppColorsService.whiteColor,
+      cardColor: AppColorsService.cardColor1,
       iconTheme: const IconThemeData(
-        color: AppColorsService.iconColor,
+        color: AppColorsService.principalIcons,
       ),
       fontFamily: 'Lora',
       textTheme: const TextTheme(

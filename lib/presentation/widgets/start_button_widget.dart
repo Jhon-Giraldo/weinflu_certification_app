@@ -12,7 +12,8 @@ class StartButtonWidget extends StatelessWidget {
       style: ButtonStyle(
         backgroundColor:
             MaterialStateProperty.all(AppColorsService.primaryColor),
-        foregroundColor: MaterialStateProperty.all(AppColorsService.iconColor),
+        foregroundColor:
+            MaterialStateProperty.all(AppColorsService.principalIcons),
         padding: MaterialStateProperty.all(
           const EdgeInsets.symmetric(
             vertical: 16,
@@ -20,7 +21,9 @@ class StartButtonWidget extends StatelessWidget {
           ),
         ),
       ),
-      onPressed: () {},
+      onPressed: () {
+        Navigator.of(context).pushReplacementNamed('landingScreen');
+      },
       child: const Text(
         'Empieza tu viaje',
         style: AppTextStylesService
