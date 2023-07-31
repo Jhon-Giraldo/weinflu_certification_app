@@ -20,7 +20,7 @@ class ThemeConfig {
         displayLarge: AppTextStylesService.logoTextStyle,
         displayMedium: AppTextStylesService.buttonTextStyle,
         bodyLarge: AppTextStylesService.appbarTextStyle,
-        bodyMedium: AppTextStylesService.captionStyle,
+        bodyMedium: AppTextStylesService.subtittleStyle,
       ),
     );
   }

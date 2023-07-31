@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:weinflu_app_idea/config/app_routes.dart';
-import 'package:weinflu_app_idea/presentation/screens/guitar_course_screen.dart';
-import 'package:weinflu_app_idea/presentation/screens/landing_screen.dart';
 
+import 'config/app_routes.dart';
 import 'config/theme/theme_config.dart';
+import 'presentation/screens/guitar_course_screen.dart';
+import 'presentation/screens/landing_screen.dart';
 import 'presentation/screens/onboarding_screen.dart';
 
 class WeinFluMusic extends StatelessWidget {

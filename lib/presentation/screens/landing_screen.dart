@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:weinflu_app_idea/infrastructure/services/app_colors_service.dart';
-import 'package:weinflu_app_idea/infrastructure/services/app_text_style_service.dart';
+
+import '../../infrastructure/services/app_colors_service.dart';
+import '../../infrastructure/services/app_text_style_service.dart';
+import '../widgets/cards_container_widget.dart';
+import '../widgets/custom_bottom_navigation_bar_widget.dart';
 
 class LandingScreen extends StatelessWidget {
   const LandingScreen({super.key});
@@ -22,7 +25,7 @@ class LandingScreen extends StatelessWidget {
             Icon(
               Icons.search_rounded,
               color: AppColorsService.principalIcons,
-              size: 28,
+              size: 35,
             ),
           ],
         ),
@@ -35,86 +38,6 @@ class LandingScreen extends StatelessWidget {
           CustomBottomNavigationBar(),
         ],
       ),
-    );
-  }
-}
-
-class CardsContainer extends StatelessWidget {
-  const CardsContainer({
-    super.key,
-  });
-
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      color: AppColorsService.primaryColor,
-      child: ListView.builder(
-        itemCount: 4,
-        itemBuilder: (BuildContext _, int index) => const CardWidget(),
-      ),
-    );
-  }
-}
-
-class CardWidget extends StatelessWidget {
-  const CardWidget({
-    super.key,
-  });
-
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      height: 150,
-      color: Colors.amber,
-      margin: const EdgeInsets.only(bottom: 10),
-    );
-  }
-}
-
-class CustomBottomNavigationBar extends StatelessWidget {
-  const CustomBottomNavigationBar({
-    super.key,
-  });
-
-  @override
-  Widget build(BuildContext context) {
-    return BottomNavigationBar(
-      showSelectedLabels: false,
-      showUnselectedLabels: false,
-      items: const [
-        BottomNavigationBarItem(
-          icon: Icon(
-            Icons.home,
-            color: AppColorsService.navigationselectedIcon,
-            size: 40,
-          ),
-          label: '',
-        ),
-        BottomNavigationBarItem(
-          icon: Icon(
-            Icons.search,
-            color: AppColorsService.navigationUnselectedIcon,
-            size: 40,
-          ),
-          label: '',
-        ),
-        BottomNavigationBarItem(
-          icon: Icon(
-            Icons.push_pin_outlined,
-            color: AppColorsService.navigationUnselectedIcon,
-            size: 40,
-          ),
-          label: '',
-        ),
-        BottomNavigationBarItem(
-          icon: Icon(
-            Icons.person_outline_rounded,
-            color: AppColorsService.navigationUnselectedIcon,
-            size: 40,
-          ),
-          label: '',
-        ),
-      ],
     );
   }
 }

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:weinflu_app_idea/infrastructure/services/app_colors_service.dart';
+
+import 'app_colors_service.dart';
 
 class AppTextStylesService {
   AppTextStylesService._();
@@ -19,14 +20,21 @@ class AppTextStylesService {
   );
 
   static const TextStyle appbarTextStyle = TextStyle(
-    fontSize: 25,
+    fontSize: 30,
     color: AppColorsService.whiteColor,
     fontStyle: FontStyle.normal,
   );
 
-  static const TextStyle captionStyle = TextStyle(
-    fontSize: 12,
+  static const TextStyle tittleStyle = TextStyle(
+    fontSize: 27,
     color: AppColorsService.blackColor,
     fontStyle: FontStyle.normal,
+  );
+
+  static const TextStyle subtittleStyle = TextStyle(
+    fontSize: 18,
+    color: AppColorsService.subtittleColor,
+    fontStyle: FontStyle.normal,
+    fontWeight: FontWeight.bold,
   );
 }
