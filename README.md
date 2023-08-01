@@ -1,16 +1,19 @@
-# weinflu_app_idea
 
-A new Flutter project.
+# WeinFlu App - PoC para Certificación de Primer Módulo
 
-## Getting Started
+Este proyecto es un *Proof of Concept* (PoC) para el primer módulo de certificación WeinFlu. He creado una aplicación Flutter con tres pantallas distintas para demostrar las habilidades adquiridas en el desarrollo de aplicaciones con esta tecnología  en el curso. 
 
-This project is a starting point for a Flutter application.
+## Características Técnicas
 
-A few resources to get you started if this is your first Flutter project:
+Las principales técnicas y herramientas utilizadas en el desarrollo de este proyecto son las siguientes:
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+- **Animaciones implícitas**: Se utilizó este tipo de animaciones para crear transiciones suaves y atractivas entre las diferentes pantallas
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- **CustomPainter**: Se usó de CustomPainter para dibujar y personalizar widgets de manera más detallada y precisa.
+
+- **Arquitectura Limpia**: Se siguieron los principios de Clean Architecture, Clean Code, y Principios Solid, para mantener nuestro código modular, flexible y fácilmente testeable.
+
+## Diseño de Referencia
+
+Para el diseño de la aplicación, nos inspiramos en este [diseño de Musikita Course App](https://dribbble.com/shots/17212584-Musikita-Course-App) en Dribbble.
+
