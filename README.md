@@ -15,5 +15,5 @@ Las principales técnicas y herramientas utilizadas en el desarrollo de este pro
 
 ## Diseño de Referencia
 
-Para el diseño de la aplicación, nos inspiramos en este [diseño de Musikita Course App](https://dribbble.com/shots/17212584-Musikita-Course-App) en Dribbble.
+Para el diseño de la aplicación, me inspiré en este [diseño de Musikita Course App](https://dribbble.com/shots/17212584-Musikita-Course-App) en Dribbble.
 
