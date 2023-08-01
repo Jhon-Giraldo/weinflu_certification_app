@@ -22,11 +22,14 @@ class TeachersCardWidget extends StatelessWidget {
     return Align(
       alignment: Alignment.center,
       child: SizedBox(
-        width: 350,
+        width: 365,
         height: 100,
         child: Container(
-          decoration: const BoxDecoration(color: AppColorsService.whiteColor),
-          margin: const EdgeInsets.only(bottom: 20),
+          decoration: const BoxDecoration(
+            color: AppColorsService.whiteColor,
+          ),
+          padding: const EdgeInsets.only(top: 8, bottom: 10),
+          margin: const EdgeInsets.only(bottom: 5),
           child: Row(
             mainAxisAlignment: MainAxisAlignment.start,
             children: [
@@ -49,7 +52,7 @@ class TeachersCardWidget extends StatelessWidget {
                 ),
               ),
               const SizedBox(
-                width: 20,
+                width: 25,
               ),
               Expanded(
                 child: Column(
@@ -58,14 +61,14 @@ class TeachersCardWidget extends StatelessWidget {
                   children: [
                     Text(
                       title,
-                      style: AppTextStylesService.tittleStyle,
+                      style: AppTextStylesService.teachersNameStyle,
                     ),
                     const SizedBox(
-                      height: 2,
+                      height: 4,
                     ),
                     Text(
                       subtitle,
-                      style: AppTextStylesService.subtittleStyle,
+                      style: AppTextStylesService.teachersSubtitleStyle,
                     ),
                   ],
                 ),

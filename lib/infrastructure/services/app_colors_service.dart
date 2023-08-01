@@ -11,4 +11,5 @@ class AppColorsService {
   static const Color whiteColor = Color(0xFFFFFFFF);
   static const Color blackColor = Color(0xFF000000);
   static const Color subtittleColor = Color(0xFF8387A4);
+  static Color whiteColorWithOpacity = const Color(0xFFFFFFFF).withOpacity(0.5);
 }

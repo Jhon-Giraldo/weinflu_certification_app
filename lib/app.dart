@@ -4,6 +4,7 @@ import 'config/app_routes.dart';
 import 'config/theme/theme_config.dart';
 import 'presentation/screens/guitar_course_screen.dart';
 import 'presentation/screens/landing_screen.dart';
+import 'presentation/screens/loading_animation_screen.dart';
 import 'presentation/screens/onboarding_screen.dart';
 
 class WeinFluMusic extends StatelessWidget {
@@ -29,6 +30,10 @@ class WeinFluMusic extends StatelessWidget {
           case AppRoutes.guitarCourseScreen:
             return MaterialPageRoute(
               builder: (context) => const GuitarCourseScreen(),
+            );
+          case AppRoutes.loadingAnimationScreen:
+            return MaterialPageRoute(
+              builder: (context) => const LoadingAnimationPage(),
             );
           //Por defecto será "OnBoarding"
           default:

@@ -22,7 +22,11 @@ class StartButtonWidget extends StatelessWidget {
         ),
       ),
       onPressed: () {
-        Navigator.of(context).pushReplacementNamed('landingScreen');
+        //Simulación de Carga Usando Animaciones Explícitas :D
+        Navigator.of(context).pushNamed('loadingAnimationScreen');
+        Future.delayed(const Duration(milliseconds: 1000), () {
+          Navigator.of(context).pushReplacementNamed('landingScreen');
+        });
       },
       child: const Text(
         'Empieza tu viaje',

@@ -12,6 +12,8 @@ class ThemeConfig {
       primaryColor: AppColorsService.primaryColor,
       scaffoldBackgroundColor: AppColorsService.whiteColor,
       cardColor: AppColorsService.cardColor1,
+      splashColor: Colors.transparent,
+      highlightColor: Colors.transparent,
       iconTheme: const IconThemeData(
         color: AppColorsService.principalIcons,
       ),
@@ -20,7 +22,7 @@ class ThemeConfig {
         displayLarge: AppTextStylesService.logoTextStyle,
         displayMedium: AppTextStylesService.buttonTextStyle,
         bodyLarge: AppTextStylesService.appbarTextStyle,
-        bodyMedium: AppTextStylesService.subtittleStyle,
+        bodyMedium: AppTextStylesService.subtitleStyle,
       ),
     );
   }

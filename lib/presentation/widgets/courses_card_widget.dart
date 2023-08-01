@@ -22,7 +22,11 @@ class CoursesCardWidget extends StatelessWidget {
     return GestureDetector(
       onTap: () {
         if (index == 0) {
-          Navigator.of(context).pushNamed('guitarCourseScreen');
+          //Simulación de Carga Usando Animaciones Explícitas :D
+          Navigator.of(context).pushNamed('loadingAnimationScreen');
+          Future.delayed(const Duration(milliseconds: 1500), () {
+            Navigator.of(context).pushReplacementNamed('guitarCourseScreen');
+          });
         }
       },
       child: Align(
@@ -53,14 +57,14 @@ class CoursesCardWidget extends StatelessWidget {
                   children: [
                     Text(
                       title,
-                      style: AppTextStylesService.tittleStyle,
+                      style: AppTextStylesService.titleStyle,
                     ),
                     const SizedBox(
                       height: 2,
                     ),
                     Text(
                       subtitle,
-                      style: AppTextStylesService.subtittleStyle,
+                      style: AppTextStylesService.subtitleStyle,
                     ),
                   ],
                 )

@@ -25,13 +25,13 @@ class AppTextStylesService {
     fontStyle: FontStyle.normal,
   );
 
-  static const TextStyle tittleStyle = TextStyle(
+  static const TextStyle titleStyle = TextStyle(
     fontSize: 26,
     color: AppColorsService.blackColor,
     fontStyle: FontStyle.normal,
   );
 
-  static const TextStyle subtittleStyle = TextStyle(
+  static const TextStyle subtitleStyle = TextStyle(
     fontSize: 15.5,
     color: AppColorsService.subtittleColor,
     fontStyle: FontStyle.normal,
@@ -39,10 +39,30 @@ class AppTextStylesService {
   );
 
   static const TextStyle courseTitleStyle = TextStyle(
-    fontSize: 32,
+    fontSize: 35,
     color: AppColorsService.primaryColor,
     fontStyle: FontStyle.normal,
     fontWeight: FontWeight.bold,
     letterSpacing: 1,
+  );
+
+  static const TextStyle teachersTitleStyle = TextStyle(
+    fontSize: 30,
+    color: AppColorsService.blackColor,
+    fontStyle: FontStyle.normal,
+    fontWeight: FontWeight.bold,
+  );
+
+  static const TextStyle teachersNameStyle = TextStyle(
+    fontSize: 21,
+    color: AppColorsService.blackColor,
+    fontStyle: FontStyle.normal,
+  );
+
+  static const TextStyle teachersSubtitleStyle = TextStyle(
+    fontSize: 15,
+    color: AppColorsService.subtittleColor,
+    fontStyle: FontStyle.normal,
+    fontWeight: FontWeight.bold,
   );
 }

@@ -10,39 +10,43 @@ class LandingScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        centerTitle: false,
-        backgroundColor: AppColorsService.primaryColor,
-        title: const Row(
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+    return WillPopScope(
+      onWillPop: () async => false,
+      child: Scaffold(
+        appBar: AppBar(
+          automaticallyImplyLeading: false,
+          centerTitle: false,
+          backgroundColor: AppColorsService.primaryColor,
+          title: const Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+              Padding(
+                padding: EdgeInsets.only(left: 15, top: 10),
+                child: Text(
+                  'Elige un curso!',
+                  textAlign: TextAlign.start,
+                  style: AppTextStylesService.appbarTextStyle,
+                ),
+              ),
+              Padding(
+                padding: EdgeInsets.only(top: 16, right: 15),
+                child: Icon(
+                  Icons.search_rounded,
+                  color: AppColorsService.principalIcons,
+                  size: 35,
+                ),
+              ),
+            ],
+          ),
+        ),
+        body: const Column(
           children: [
-            Padding(
-              padding: EdgeInsets.only(left: 15, top: 10),
-              child: Text(
-                'Elige un curso!',
-                textAlign: TextAlign.start,
-                style: AppTextStylesService.appbarTextStyle,
-              ),
+            Expanded(
+              child: CoursesCardsContainer(),
             ),
-            Padding(
-              padding: EdgeInsets.only(top: 16, right: 15),
-              child: Icon(
-                Icons.search_rounded,
-                color: AppColorsService.principalIcons,
-                size: 35,
-              ),
-            ),
+            CustomBottomNavigationBar(),
           ],
         ),
-      ),
-      body: const Column(
-        children: [
-          Expanded(
-            child: CoursesCardsContainer(),
-          ),
-          CustomBottomNavigationBar(),
-        ],
       ),
     );
   }
