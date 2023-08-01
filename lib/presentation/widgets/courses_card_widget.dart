@@ -3,13 +3,13 @@ import 'package:flutter/material.dart';
 import '../../infrastructure/services/app_colors_service.dart';
 import '../../infrastructure/services/app_text_style_service.dart';
 
-class CardWidget extends StatelessWidget {
+class CoursesCardWidget extends StatelessWidget {
   final int index;
   final String imageUrl;
   final String title;
   final String subtitle;
 
-  const CardWidget({
+  const CoursesCardWidget({
     required this.index,
     required this.imageUrl,
     required this.title,
@@ -56,7 +56,7 @@ class CardWidget extends StatelessWidget {
                       style: AppTextStylesService.tittleStyle,
                     ),
                     const SizedBox(
-                      height: 5,
+                      height: 2,
                     ),
                     Text(
                       subtitle,

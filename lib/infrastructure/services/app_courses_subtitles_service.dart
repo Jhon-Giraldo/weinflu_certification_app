@@ -1,5 +1,5 @@
-class AppSubtitlesService {
-  AppSubtitlesService._();
+class AppCoursesSubtitlesService {
+  AppCoursesSubtitlesService._();
 
   static const List<String> subtitles = [
     '124 Estudiantes',

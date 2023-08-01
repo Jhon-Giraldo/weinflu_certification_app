@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
 import '../../infrastructure/services/app_colors_service.dart';
-import '../../infrastructure/services/app_images_service.dart';
-import '../../infrastructure/services/app_subtitles_service.dart';
-import '../../infrastructure/services/app_titles_service.dart';
-import 'card_widget.dart';
+import '../../infrastructure/services/app_courses_images_service.dart';
+import '../../infrastructure/services/app_courses_subtitles_service.dart';
+import '../../infrastructure/services/app_courses_titles_service.dart';
+import 'courses_card_widget.dart';
 
-class CardsContainer extends StatelessWidget {
-  const CardsContainer({
+class CoursesCardsContainer extends StatelessWidget {
+  const CoursesCardsContainer({
     super.key,
   });
 
@@ -26,11 +26,11 @@ class CardsContainer extends StatelessWidget {
         child: ListView.builder(
           physics: const NeverScrollableScrollPhysics(),
           itemCount: 4,
-          itemBuilder: (BuildContext _, int index) => CardWidget(
+          itemBuilder: (BuildContext _, int index) => CoursesCardWidget(
               index: index,
-              imageUrl: AppImagesService.images[index],
-              title: AppTitlesService.titles[index],
-              subtitle: AppSubtitlesService.subtitles[index]),
+              imageUrl: AppCoursesImagesService.images[index],
+              title: AppCoursesTitlesService.titles[index],
+              subtitle: AppCoursesSubtitlesService.subtitles[index]),
         ),
       ),
     );

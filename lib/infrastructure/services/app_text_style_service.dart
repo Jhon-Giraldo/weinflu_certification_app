@@ -26,15 +26,23 @@ class AppTextStylesService {
   );
 
   static const TextStyle tittleStyle = TextStyle(
-    fontSize: 27,
+    fontSize: 26,
     color: AppColorsService.blackColor,
     fontStyle: FontStyle.normal,
   );
 
   static const TextStyle subtittleStyle = TextStyle(
-    fontSize: 18,
+    fontSize: 15.5,
     color: AppColorsService.subtittleColor,
     fontStyle: FontStyle.normal,
     fontWeight: FontWeight.bold,
+  );
+
+  static const TextStyle courseTitleStyle = TextStyle(
+    fontSize: 32,
+    color: AppColorsService.primaryColor,
+    fontStyle: FontStyle.normal,
+    fontWeight: FontWeight.bold,
+    letterSpacing: 1,
   );
 }

@@ -1,5 +1,5 @@
-class AppTitlesService {
-  AppTitlesService._();
+class AppCoursesTitlesService {
+  AppCoursesTitlesService._();
 
   static const List<String> titles = [
     'Guitarra',

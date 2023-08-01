@@ -12,7 +12,9 @@ class OnboardingScreen extends StatelessWidget {
       body: Stack(
         children: [
           Image.asset(
-            'assets/onboarding_image.jpg',
+            'assets/images/onboarding_image.jpg',
+            height: MediaQuery.of(context).size.height,
+            width: MediaQuery.of(context).size.width,
             fit: BoxFit.cover,
           ),
           Container(

@@ -1,5 +1,5 @@
-class AppImagesService {
-  AppImagesService._();
+class AppCoursesImagesService {
+  AppCoursesImagesService._();
 
   static const List<String> images = [
     'assets/images/guitar.png',
